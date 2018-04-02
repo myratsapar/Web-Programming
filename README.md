@@ -1,9 +1,3 @@
 # Web-Programming
 
-HTML
-
-CSS 
-
-Java 
-
-Script
+HTML, CSS, Bootstrap, JavaScript, Servlet, JSP
