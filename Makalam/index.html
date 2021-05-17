@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layoutstyle.css">
+  <title>Makalam Restaurant</title>
+</head>
+
+<body>
+  <div class="wrapper">
+      <nav class="menu">
+          <button aria-expanded="false" aria-controls="menu-list">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul id="menu-list">
+            <li>
+              <a href="">Tagamlar</a>
+            </li>
+            <li>
+              <a href="">Alkogolly içgiler</a>
+            </li>
+            <li>
+              <a href="">Gazly içgiler</a>
+            </li>
+            <li>
+              <a href="">Şirin tagamlar</a>
+            </li>
+            <li>
+              <a href="">Bellikler</a>
+            </li>
+          </ul>
+        </nav>
+
+
+        <div class="top">
+          <header class="hero">
+
+            <h1>Makalam Restaurant</h1>
+            <p>Durmuş Lezzetli Bolmaly!</p>
+          </header>
+          <div class="cta cta1">
+            <p class="price">200 TMT</p>
+            <p>Buglama</p>
+          </div>
+          <div class="cta cta2">
+            <p class="price">100 TMT</p>
+            <p>Tamdyrlama</p>
+          </div>
+        </div>
+
+        <section class="features">
+          <div class="feature">
+            <span class="icon"></span>
+            <img src=img/isl3.jpg alt="">
+            <h3>Işlekli</h3>
+            <p>Hamyryň içine et goşup taýýarlanylýan türkmen milli tagamy</p>
+          </div>
+          <div class="feature">
+            <span class="icon"></span>
+            <img src=img/unas.jpg alt="">
+            <h3>Unaş</h3>
+            <p>Begler aşy. Unaş içip bolynçaň, köje göçüp gonynçaň</p>
+          </div>
+          <div class="feature">
+            <span class="icon"></span>
+            <img src=img/celpek2.jpg alt="">
+            <h3>Çelpek</h3>
+            <p>Inçe hamyrdan taýýarlanylýan türkmen toý saçagynyň esasy bezegi</p>
+          </div>
+          <div class="feature">
+            <span class="icon"></span>
+            <img src=img/gomme2.jpg alt="">
+            <h3>Gömme</h3>
+            <p>Çägäniň içine gömülip pişirilýän türkmen tagamy</p>
+          </div>
+        </section>
+
+
+    <section class="about">
+      <img src="img/palaw.jpg" alt="Turkmen Palaw" class="about__mockup">
+      <div class="about__details">
+        <h2>Türkmen Palawy</h2>
+        <p>Türkmeniň milli datly tagamy</p>
+          <button>Giňişleýin →</button>
+      </div>
+    </section>
+
+
+    <section class="gallery">
+
+      <h2>Çem Gelen Şekiller</h2>
+
+      <img src="https://source.unsplash.com/random/201x201" alt="">
+      <img src="https://source.unsplash.com/random/202x202" alt="">
+      <img src="https://source.unsplash.com/random/203x203" alt="">
+      <img src="https://source.unsplash.com/random/204x204" alt="">
+      <img src="https://source.unsplash.com/random/205x205" alt="">
+      <img src="https://source.unsplash.com/random/206x206" alt="">
+      <img src="https://source.unsplash.com/random/207x207" alt="">
+      <img src="https://source.unsplash.com/random/207x208" alt="">
+      <img src="https://source.unsplash.com/random/207x209" alt="">
+      <img src="https://source.unsplash.com/random/207x210" alt="">
+    </section>
+  </div>
+
+   <script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+  </script>
+
+</body>
+
+</html>
