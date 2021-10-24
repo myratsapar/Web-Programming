@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/play.js" type="text/javascript"></script>
+    <title>Puzzle</title>
+  </head>
+  <body>
+    <div class="index">
+      <h1 id="indexname">8 Puzzle Game</h1>
+        <div id="indexbox">
+          <div>
+            <h4 id="programmer">By: Sapar Myradov</h4>
+          </div>
+          <div>
+            <h4 id="wishesforsuccess">Enjoy!</h4>
+          </div>
+        </div>
+        <div id="startbutton" class="startbutton">START</div>
+    </div>
+      <div class="pickanimage">
+          <h1 id="imagetitle">Pick an Image</h1>
+          <div id="pics">
+            <img src="img/1.jpg" alt="mumia"/>
+            <img src="img/2.jpg" alt="warrior"/>
+            <img src="img/3.jpg" alt="guard"/>
+          </div>
+          <div id="texts">
+          <p id="sacrifice">"When will you save me"</p>
+          <p id="Queen">"Its her..The Queen"</p>
+          <p id="Guard">Guard</p>
+          </div>
+          <div id="buttonHidden">Continue</div>
+      </div>
+      <div class="main" style="width: 800px;">
+        <div id="game">
+          <ul>
+            <div id="list">
+            <li>
+            </li>
+          </div>
+          </ul>
+        </div>
+        <div id="select">
+          <h4 id="shuffletext">Select Shuffle Amount</h4>
+          <select name="shuffle" id="shuffle">
+          <option selected disabled value="none">Choose shuffle</option>
+          <option value="3">3 moves</option>
+          <option value="5">5 moves</option>
+          <option value="9">9 moves</option>
+          </select>
+          <div class="hideButton" id="play">PLAY</div>
+        </div>
+        <div class="backdrop" id=backdrop>
+          <p id="enter">Congratulations! You made it!</p>
+          <p> Press F5 to restart </p>
+      </div>
+    </div>
+  </body>
+</html>
